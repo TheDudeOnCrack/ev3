@@ -1,0 +1,12 @@
+
+while wait() do
+
+if local v=ev3.sensor3:getValues()
+  print("Sensor 4 v[4]="..v[50])
+do
+  ev3.motorB:run(-100)
+  ev3.motorC:run(-100)
+else
+  ev3.motorB:run(0)
+  ev3.motorA:run(-100)
+end
